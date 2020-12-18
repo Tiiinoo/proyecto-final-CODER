@@ -1,0 +1,100 @@
+/* ESTILOS EXCLUSIVOS INDEX*/
+#mainMain {
+  min-height: 100%;
+  height: auto;
+}
+.divMainContainer {
+  min-height: 100%;
+  height: auto;
+}
+.mainRow {
+  align-items: center;
+  min-height: 420px;
+  height: auto;
+}
+.howImI {
+  height: auto;
+  min-height: 420px;
+  background-image: $background-color;
+  border-radius: 1rem;
+    h3 {
+      text-align: center;
+      padding-top: 15px;
+    }
+      @media only screen and (min-width: 577px) and (max-width:768px) {
+        min-height: 320px;
+      }
+      @media only screen and (max-width: 576px) {
+        min-height: auto;
+      }
+}
+#accordion {
+  color: $text-color;
+  font-family: $general-font;
+  font-size: 0.9rem;
+}
+.card {
+  background-color: inherit;
+  font-family: $general-font;
+    a:hover {
+      text-decoration: none;
+      color:$text-color;
+    }
+}
+.mainChoicesRow {
+  height: 100%;
+  align-items: center;
+}
+.mainChoicesCol {
+  @media only screen and (max-width: 576px) {
+  flex-direction: column;
+  align-items: center;
+  }
+}
+.mainSectionDiv {
+  width: 20%;
+  display: inline-block;
+  height: 150px;
+  background-image: $background-color;
+  border-radius: 1rem;
+  text-align: center;
+
+  @media only screen and (min-width: 577px) and (max-width:768px) {
+    width: 40%;
+  }
+  @media only screen and (max-width: 576px) {
+    width: 50%;
+  }
+}
+.mainSectionTitle {
+  display: blocks;
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bolder;
+  padding-top: 15px;
+    &:hover {
+      transform: scale(1.1);
+    }
+}
+.mainSectionIcons {
+  font-size: 60px;
+  display: inline-block;
+  text-align: center;
+  padding-top: 20px;
+    &:hover {
+    transform: scale(1.1);
+    }
+}
+.mainSection {
+  a:hover {
+    background-color: none;
+    text-decoration: none;
+    color: #ffffff;
+  }
+}
+h1 {
+  @media only screen and (max-width: 576px) {
+
+    font-size: 2rem;
+  }
+}

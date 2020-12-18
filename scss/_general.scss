@@ -1,0 +1,51 @@
+* {
+  margin: 1px;
+  padding: 1px;
+}
+body {
+    background-image: $background-image;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;  
+    overflow-x: hidden;
+    color: $text-color;
+    font-family: $general-font;
+}
+h1 {
+  font-weight: bolder;
+  font-family: $titles-font;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: $text-color;
+}
+.nav-link:hover {
+  @include scale;  
+}
+.navbar-expand-lg {
+  justify-content: space-evenly;
+}
+.navbar-collapse {
+  flex-grow: initial;
+}
+.icon-home3 {
+  font-size: 2.5rem;
+}
+.navbar-brand {  
+  &:hover {
+    @include scale;
+  }
+}
+#navMenu li, #extraContent li, .howImI li, #navMenuSection li {
+  font-family: $menus-font;
+}
+footer {
+  padding: 5px 0px 0px 0px;
+  font-size: 1rem;
+  text-align: center;
+  a:hover {
+    @include scale;
+    background-image: $background-color;
+  }
+}

@@ -1,0 +1,53 @@
+#sendedMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 440px;
+    @media only screen and (min-width: 769px) and (max-width:992px) {
+      min-height: 750px;
+    }
+  @media only screen and (min-width: 769px) and (max-width:992px) {
+    min-height: 750px;
+   }
+   @media only screen and (min-width: 577px) and (max-width:768px) {
+      min-height: 520px;
+  }
+  @media only screen and (max-width: 576px) {
+    min-height: 280px;
+  }
+}
+@keyframes mensaje {
+  0%{ transform: scale(1);}
+  25%{ transform: scale(1.2);}
+  50%{ transform: scale(1);}
+  75%{ transform: scale(1.2);}
+  100%{ transform: scale(1);}
+}
+.thanksMessage {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-image: $background-color;
+  padding: 1.5rem 2.5rem 2rem 2.5rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  animation-name: mensaje;
+  animation-iteration-count: 10;
+  animation-duration: 3s;
+  animation-delay: 1s;
+  @media only screen and (max-width: 576px) {
+    padding: 1rem;
+    text-align: center;
+    h2 {
+      font-size: 1.3rem;
+      font-weight: bolder;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+
