@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="../fonts/fonts.css">
     <link rel="stylesheet" href="../css/bootstrap.css">
     <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- <link rel="stylesheet" href="../css/style.css"> -->
     <!-- JQuery last version-->
     <script src="../JS/jquery.min.js"></script>
   </head>
@@ -60,121 +60,127 @@
         </div>
       </header>
     </div>
-    <main id="pageMain">  
-      <div id="menuViewer">      
-        <nav id="navMenuSection">
-          <h4 class="navMenuSectionTitle">Aplicaciones</h4>
-          <H5 class=navMenuSectionSubTitle>Aplicaciones descentralizadas</H5>
-          <div id="accordion" role="tablist">
-            <div class="card">
-              <div class="card-header" role="tab" id="headingOne">
-                <h6 class="mb-0">
-                  <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    ¿Qué son?
-                  </a>
-                </h6>
-              </div>             
-            </div>
-            <div class="card">
-              <div class="card-header" role="tab" id="headingTwo">
-                <h6 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                    ¿Cómo se usan?
-                  </a>
-                </h6>
-              </div>              
-            </div>
-            <H5 class="navMenuSectionSubTitle">Billeteras</H5>
-            <div class="card">
-              <div class="card-header" role="tab" id="headingTree">
-                <h6 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
-                    ¿Qué es una wallet?
-                  </a>
-                </h6>
-              </div>              
-            </div>
-            <div class="card">
-              <div class="card-header" role="tab" id="headingFour">
-                <h6 class="mb-0">
-                  <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                    ¿Cómo se usan?
-                  </a>
-                </h6>
+    <main id="pageMain">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-9" id="menuViewer"> 
+            <div class="row">
+              <div id="navMenuSection" class="col-lg-3">
+                <h4 class="navMenuSectionTitle">Aplicaciones</h4>
+                <H5 class=navMenuSectionSubTitle>Aplicaciones descentralizadas</H5>
+                <div id="accordion" role="tablist">
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingOne">
+                      <h6 class="mb-0">
+                        <a data-toggle="collapse" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          ¿Qué son?
+                        </a>
+                      </h6>
+                    </div>             
+                  </div>
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingTwo">
+                      <h6 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          ¿Cómo se usan?
+                        </a>
+                      </h6>
+                    </div>              
+                  </div>
+                  <H5 class="navMenuSectionSubTitle">Billeteras</H5>
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingTree">
+                      <h6 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseTree" aria-expanded="false" aria-controls="collapseTree">
+                          ¿Qué es una wallet?
+                        </a>
+                      </h6>
+                    </div>              
+                  </div>
+                  <div class="card">
+                    <div class="card-header" role="tab" id="headingFour">
+                      <h6 class="mb-0">
+                        <a class="collapsed" data-toggle="collapse" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                          ¿Cómo se usan?
+                        </a>
+                      </h6>
+                    </div>
+                  </div>
+                </div>            
+              </div>
+              <div id="principalSelection" class="col-lg-9">
+                <h4>Contenido seleccionado</h4>
+                <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
+                  <div class="card-body">
+                  <h6>¿Qué es una dApp?</h6>
+                  <p>Es una aplicación que, en lugar de estar alojada en la red como la conocemos, está sobre o en
+                    una blockchain. Desde ese punto es que adopta las características propias de una blockchain, es 
+                    descentralizada, no hay un dueño tomando decisiones detrás de ella, sus datos son accesibles para
+                    cualquiera, por estar guardados en una blockchain, y es open source, cualquier persona puede 
+                    ingresar a su repositorio y chequear el código fuente que le da vida.
+                  </p>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="card-body">
+                    <h6>¿Cómo se usan?</h6>
+                    <p>Al igual que una aplicación centralizada se descargan desde Appstore o Google Play, pueden
+                      funcionar como extensiones de navegadores o directamente como páginas web. Esto quiere decir que,
+                      si bien el back-end se desarrolla en el lenguaje propio de la blockchain para poder interactuar
+                      con ella, el front-end se desarrolla en los lenguajes tradicionales de aplicaciones centralizadas.
+                      Por lo tanto, la interacción es similar a una aplicación común, pero con algunas diferencias 
+                      como la no obligatoriedad de KYC (know your client), propias de la descentralización.
+                    </p>
+                  </div>
+                </div>
+                <div id="collapseTree" class="collapse" role="tabpanel" aria-labelledby="headingTree">
+                  <div class="card-body">
+                    <h6>¿Qué es una wallet?</h6>
+                    <p>Una wallet es una dApp, que cumple la función de ser una interfaz, comprensible para usuarios 
+                      no desarrolladores, que permite interactuar de forma amigable con la blockchain. Es importante
+                      entender que las cryptomonedas no están en tu billetera, si no que están en la blockchain y tu
+                      billetera lo muestra de forma amigable. Por medio de ellas, es posible interactuar con otras
+                      dApps. Las billeteras funcionan con dos claves, la clave privada, que se guarda internamente 
+                      en la aplicación y sirve para firmar las transacciones y autorizarlas, y la clave pública que
+                      sirve para determinar a dónde se dirigen los fondos transferidos. Ambas se generan
+                      automáticamente y de modo aleatorio.
+                    </p>
+                  </div>
+                </div>
+                <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
+                  <div class="card-body">
+                    <h6>¿Cómo se usan?</h6>
+                    <p>Existen dos grandes grupos, billeteras soft y hard. Las billeteras soft se descargan como 
+                      cualquier aplicación, extensión de browser o se puede ingresa como un página web común. Las 
+                      billeteras hard son similares a un prendrive en tamaño, con el agregado de un visor y botones
+                      para poder gestionar tus fondos. Al crear una billetera, si bien no es necesario cargar datos
+                      personales, es importante guardar la "seed phrase" o semilla que la misma brinda. Se trata de
+                      12 o 24 palabras que representan, de manera entendible, la clave privada que permite firmar 
+                      transacciones. Con esta "seed phrase" podemos reestablecer nuestra billetera en cualquier 
+                      dispositivo. La clave privada es la prueba de la titularidad de la billetera y los fondos
+                      que contenga.
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>            
-        </nav>
-        <section id="principalSelection">
-          <h4>Contenido seleccionado</h4>
-          <div id="collapseOne" class="collapse show" role="tabpanel" aria-labelledby="headingOne">
-            <div class="card-body">
-            <h6>¿Qué es una dApp?</h6>
-            <p>Es una aplicación que, en lugar de estar alojada en la red como la conocemos, está sobre o en
-              una blockchain. Desde ese punto es que adopta las características propias de una blockchain, es 
-              descentralizada, no hay un dueño tomando decisiones detrás de ella, sus datos son accesibles para
-              cualquiera, por estar guardados en una blockchain, y es open source, cualquier persona puede 
-              ingresar a su repositorio y chequear el código fuente que le da vida.
-            </p>
-            </div>
+          </div>  
+          <div id="extraContent" class="col-lg-3">
+            <h4>Contenido extra</h4>
+            <ul>
+              <!-- Cada una de estas opciones desplegará un menú con opciones que derivará a un link externo-->
+              <li>Videos</li>
+              <li>Documentos</li>
+              <li>Articulos</li>
+              <li>Aplicaciones</li>
+              <li>Páginas oficiales</li>
+              <li>Grupos de Telegram</li>
+              <li>etc..</li>
+            </ul>
           </div>
-          <div id="collapseTwo" class="collapse" role="tabpanel" aria-labelledby="headingTwo">
-            <div class="card-body">
-              <h6>¿Cómo se usan?</h6>
-              <p>Al igual que una aplicación centralizada se descargan desde Appstore o Google Play, pueden
-                funcionar como extensiones de navegadores o directamente como páginas web. Esto quiere decir que,
-                si bien el back-end se desarrolla en el lenguaje propio de la blockchain para poder interactuar
-                con ella, el front-end se desarrolla en los lenguajes tradicionales de aplicaciones centralizadas.
-                Por lo tanto, la interacción es similar a una aplicación común, pero con algunas diferencias 
-                como la no obligatoriedad de KYC (know your client), propias de la descentralización.
-              </p>
-            </div>
-          </div>
-          <div id="collapseTree" class="collapse" role="tabpanel" aria-labelledby="headingTree">
-            <div class="card-body">
-              <h6>¿Qué es una wallet?</h6>
-              <p>Una wallet es una dApp, que cumple la función de ser una interfaz, comprensible para usuarios 
-                no desarrolladores, que permite interactuar de forma amigable con la blockchain. Es importante
-                entender que las cryptomonedas no están en tu billetera, si no que están en la blockchain y tu
-                billetera lo muestra de forma amigable. Por medio de ellas, es posible interactuar con otras
-                dApps. Las billeteras funcionan con dos claves, la clave privada, que se guarda internamente 
-                en la aplicación y sirve para firmar las transacciones y autorizarlas, y la clave pública que
-                sirve para determinar a dónde se dirigen los fondos transferidos. Ambas se generan
-                automáticamente y de modo aleatorio.
-              </p>
-            </div>
-          </div>
-          <div id="collapseFour" class="collapse" role="tabpanel" aria-labelledby="headingFour">
-            <div class="card-body">
-              <h6>¿Cómo se usan?</h6>
-              <p>Existen dos grandes grupos, billeteras soft y hard. Las billeteras soft se descargan como 
-                cualquier aplicación, extensión de browser o se puede ingresa como un página web común. Las 
-                billeteras hard son similares a un prendrive en tamaño, con el agregado de un visor y botones
-                para poder gestionar tus fondos. Al crear una billetera, si bien no es necesario cargar datos
-                personales, es importante guardar la "seed phrase" o semilla que la misma brinda. Se trata de
-                12 o 24 palabras que representan, de manera entendible, la clave privada que permite firmar 
-                transacciones. Con esta "seed phrase" podemos reestablecer nuestra billetera en cualquier 
-                dispositivo. La clave privada es la prueba de la titularidad de la billetera y los fondos
-                que contenga.
-              </p>
-            </div>
-          </div>
-        </section>
+        </div>    
       </div>
-      <nav id="extraContent">
-        <h4>Contenido extra</h4>
-        <ul>
-          <!-- Cada una de estas opciones desplegará un menú con opciones que derivará a un link externo-->
-          <li>Videos</li>
-          <li>Documentos</li>
-          <li>Articulos</li>
-          <li>Aplicaciones</li>
-          <li>Páginas oficiales</li>
-          <li>Grupos de Telegram</li>
-          <li>etc..</li>
-        </ul>
-      </nav>
-    </main>       
+    </main>      
     <div class="container divFooter">
       <div class="row footerRow">
         <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1">

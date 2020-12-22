@@ -1,1 +1,95 @@
+#contactMain {
+  display: flex;
+}
+#contactForm {
+  background-image: $background-color;
+  padding: 1rem 2.5rem 0.2rem 2.5rem;
+  border-radius: 1rem;
+  font-weight: bolder;
+  width: auto;
+  margin: auto;
+  label {
+    display: inline-block;
+    margin: 0.5rem 0rem;
+    padding: 0.2rem;
+    font-size: 1.25rem;
+    @media only screen and (max-width: 576px) {
+      font-size: 0.9rem;
+    }
+  }
+    @media only screen and (min-width: 769px) and (max-width:920px) {
+    padding: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: auto;
+  }
+  @media only screen and (min-width: 577px) and (max-width: 768px) {
+    padding: 20px 20px;
+  }
+  @media only screen and (max-width: 576px) {
+    padding: 5px 10px;
+  }
+}
+  #userName, #userMail, #userCrypto, #userMessage {
+    display: inline-block;
+    width: 100%;
+    color: #808080;
+    font-weight: bolder;
+    font-size: 1rem;
+    @media only screen and (max-width: 576px) {
+      font-size: 0.8rem;
+    }
+  }
+  #userMessage {
+    width: 100%;
+    height: auto;
+    font-size: 1.2rem;
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+      width: 100%;
+      height: 80px;
+      font-size: 0.8rem;
+    }
+    @media only screen and (max-width: 576px) {
+      font-size: 0.9rem;
+    }
+  }
+  #deleteMessage, #sendMessage {
+    display: inline-block;
+    width: 40%;
+    height: 3rem;
+    padding: 0rem 0rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: #ffffff;
+    background: rgba(100, 220, 168, 0.8);
+    cursor: pointer;
+    margin: 1rem 0rem;
+    font-weight: bolder;
+    
+    @media only screen and (min-width: 577px) and (max-width: 768px) {
+      width: 35%;
+      height: 2rem;
+      padding: 0rem 0rem;
+      font-size: 0.8rem;
+      margin: 5px 0px;
+      font-weight: normal;
+    }
+    @media only screen and (max-width: 576px) {
+      font-size: 1rem;
+      margin: 5px 0px;
+    }
+  }
+  #labelMessage {
+    display: block !important;
+  }
+  #deleteMessage:hover {
+    transform: scale(0.9);
+  }
+  #sendMessage {
+    float: right;
+    &:hover {
+    transform: scale(1.1);
+    }
+  }
 
